@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.activities.NoteDetalleActivity"
+
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/toolbarDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/idea"
+                android:foregroundGravity="center"
+                />
+        </Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_note"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_margin="15dp"
+                    android:elevation="1dp"
+                    >
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:orientation="vertical"
+
+                            android:padding="10dp"
+
+                            >
+
+                            <TextView
+                                android:id="@+id/tvTituloNotaActivityDetalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:textAlignment="center"
+                                android:gravity="center_horizontal"
+                                android:text="Titulo"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/tvDescripcionNotaActivityDetalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:text="Descripcion"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+
+
+                        </LinearLayout>
+
+
+                    </ScrollView>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/ad_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="400dp"
+                    ads:adUnitId="ca-app-pub-9783550633423906/3671131679"
+                    ads:adSize="BANNER"
+                   />
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/ad_view2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    ads:adUnitId="ca-app-pub-9783550633423906/4026548413"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="450dp"
+                    ads:adSize="BANNER"
+                    />
+
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_editar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:elevation="1dp"
+            >
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </FrameLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

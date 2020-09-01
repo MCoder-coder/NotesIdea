@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoteEureka</string>
+    <string name="hint_title">" заглавие"</string>
+    <string name="hint_description">описание</string>
+    <string name="button_save">" спасти"</string>
+    <string name="btn_edit">" редактировать"</string>
+    <string name="toast_add">" Заметка успешно добавлена"</string>
+    <string name="toast_update">" Заметка успешно обновлена"</string>
+</resources>

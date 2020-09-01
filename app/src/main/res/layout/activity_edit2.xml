@@ -1,0 +1,120 @@
+<!--suppress AndroidUnknownAttribute -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_height="match_parent"
+        layout_width="match_parent"
+
+        android:layout_width="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <Toolbar
+                android:id="@+id/toolbarMainEditNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/idea"
+                    tools:ignore="ContentDescription" />
+            </Toolbar>
+
+            <EditText
+                android:id="@+id/activityedit_note"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_title"
+                android:inputType="textAutoComplete"
+
+                android:minHeight="@dimen/min_height"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/activityedit_description"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="86dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/hint_description"
+                android:inputType="textMultiLine"
+                android:minHeight="@dimen/min_height"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:autofillHints="" />
+
+
+
+           <com.google.android.gms.ads.AdView
+                android:id="@+id/ad_view_edit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adUnitId="ca-app-pub-9783550633423906/6366411927"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                ads:adSize="BANNER"
+
+                />
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/ad_view_edit1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adUnitId="ca-app-pub-9783550633423906/8765360464"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                ads:adSize="BANNER"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="bottom"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_baseline_save_24"
+        android:src="@drawable/ic_baseline_save_24"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

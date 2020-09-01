@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoteEureka</string>
+    <string name="hint_title">" 標題"</string>
+    <string name="hint_description">" 描述"</string>
+    <string name="button_save">" 保存"</string>
+    <string name="btn_edit">" 編輯"</string>
+    <string name="toast_add">" 註釋已成功添加"</string>
+    <string name="toast_update">筆記更新成功</string>
+</resources>

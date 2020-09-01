@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button_save">Save</string>
+    <string name="hint_description">Description</string>
+    <string name="app_name">NoteEureka</string>
+    <string name="hint_title">Title</string>
+    <string name="btn_edit">Edit</string>
+    <string name="toast_update">Note updated successfully</string>
+    <string name="toast_add">Note added successfully</string>
+</resources>

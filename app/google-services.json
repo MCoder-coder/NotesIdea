@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "292206179487",
+    "firebase_url": "https://noteeureka.firebaseio.com",
+    "project_id": "noteeureka",
+    "storage_bucket": "noteeureka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:292206179487:android:3e5c15f22ddcbcdf2f5eaa",
+        "android_client_info": {
+          "package_name": "com.jr.notesidea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "292206179487-f3p1m8uhds59jqlh2csp5ojjq35u9gjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jr.notesidea",
+            "certificate_hash": "74b1e9841504e90da0eba2f7ddeb7b49ea1daf2b"
+          }
+        },
+        {
+          "client_id": "292206179487-kjg2pnlj16k3r72fsh5pi1gedbpovp12.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBECQR2lWDLPrBFlhgYtrz1WqvwWj2uL_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "292206179487-kjg2pnlj16k3r72fsh5pi1gedbpovp12.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
